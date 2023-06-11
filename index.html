@@ -1,130 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Millipointtwo - Coming Soon</title>
-    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="app, landing, corporate, Creative, Html Template, Template">
+    <meta name="author" content="web-themes">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1">
 
-	<style>
+    <!-- title -->
+    <title>MILLIPOINT</title>
 
-        @font-face { font-family: Inter; src: url('webfonts/Inter-Light.ttf'); } 
+    <!-- favicon -->
+    <link href="img/favicon.png" type="image/png" rel="icon">
 
-		body {
-			margin: 0;
-			padding: 0;
-			background-color: #231F20;
-			background-size: cover;
-			background-position: center;
-			font-family: Inter;
-		}
-		
-		.container {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			height: 100vh;
-		}
-		
-		h1 {
-			font-size: 2.2rem;
-			color: white;
-			text-align: center;
-            text-transform: uppercase;
-            font-weight: 200;
-		}
-        p {
-            color: white;
-            text-align: center;
-            font-weight: 200;
-
-        }
-		.btn {
-            color: white;
-            background-color: black;
-            text-transform: capitalize;
-        } 
-        .subscribe_form button {
-    padding: 0;
-    border: none;
-    background: transparent;
-    outline: none;
-    font-weight: 300;
-    font-size: 1rem;
-    line-height: 100%;
-    letter-spacing: 0.15em;
-    color: #FFFFFF;
-    text-decoration: none;
-    margin-left: 2rem;
-    cursor: pointer;
-}
-
-        .subscribe_form input {
-    width: 13rem;
-    height: 3rem;
-    border: 1px solid #FFFFFF;
-    background: white;
-    padding: 0 2rem;
-    font-weight: 300;
-    font-size: 1rem;
-    line-height: 100%;
-    letter-spacing: 0.1em;
-    color: #000000;
-    justify-content: center;
-}
-
-.logo {
-			display: block;
-			max-width: 40%;
-			margin-bottom: 1rem;
-            margin: 20px;
-		}
-
-
-		@media (max-width: 768px) {
-			h1 {
-				font-size: 2rem;
-			}
-            .logo {
-			display: block;
-			max-width: 60%;
-			margin-bottom: 1rem;
-            margin: 20px;
-		}
-            .container {
-            margin: 20px;    
-
-            }  
-        
-            .subscribe_form input {
-            margin: 0rem;    
-            width: 40%;
-            height: 2.5rem;
-		}
-        form {
-    display: block;
-    margin-top: 0em;
-    justify-content: center;
-}
-
-.subscribe_form button {
-        font-size: 0.9rem;
-}  
-    }  
-	</style>
+    <!-- all css here -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-	<div class="container">
-        <img src="logo1.png" alt="Logo" class="logo">
-                <form action="https://gmail.us13.list-manage.com/subscribe/post" method="POST"
-                    class="subscribe_form mt_40 mb_25">
-                    <input type="hidden" name="u" value="53caa8c921df3354e288e47bf">
-                    <input type="hidden" name="id" value="b43383492c">
-                    <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25"
-                        value="" placeholder="email adress">
-                    <button class="btn">subscribe</button>
-                    </form>
-            		<h1>COMING SOON</h1>
+
+    <div class="page_wrapper">
+        <video src="video/video.mp4" autoplay="" muted="" preload="auto" playsinline="" loop=""></video>
+        <header>
+            <div class="container-fluid">
+                <div class="row align-items-center justify-content-between no-gutters">
+                    <div class="col-3">
+                        <p class="d-none d-sm-block" data-toggle="modal" data-target="#exampleModal">Paris Men Fashion Week Spring Summer 2024</p>
+
+                        <p class="d-sm-none" data-toggle="modal" data-target="#exampleModal">PFW<br> SS24</p>
+                    </div>
+                    <div class="col-5 text-center">
+                        <img src="img/logo.png" class="logo img-fluid" alt="">
+                    </div>
+                    <div class="col-3">
+                        <ul>
+                            <li><a href="https://www.instagram.com/millipointtwo/?hl=hr" target="_blank" >IG</a></li>
+                            <li><a href="https://www.youtube.com/@millipointtwo" target="_blank" >YT</a></li>
+                            <li><a href="mailto:contact@millipointtwo.co">@</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <!-- modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close d-sm-none" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body modal_card">
+                    <img src="img/logo.png" class="logo2" alt="">
+                    <p>Dear Friend,</p>
+                    <h2>MILLI POINT TWO</h2>
+                    <p>is pleased to welcome you to the opening cocktail party</p>
+                    <div class="line"></div>
+                    <p><strong>Tuesday June 20th</strong> from 7pm till 10pm</p>
+                    <div class="line"></div>
+                    <p><strong>DJ set by Mad Bad Ting</strong></p>
+                    <div class="line"></div>
+                    <p>6 Rui Charies-Francois Dupois, 75003 Paris</p>
+
+                    <div class="contact">
+                        <p>Contact e-mail <a href="mailto:contact@millipointtwo.co">contact@millipointtwo.co</a></p>
+                        <ul>
+                            <li><a href="https://www.instagram.com/millipointtwo/?hl=hr">IG</a></li>
+                            <li><a href="https://www.youtube.com/@millipointtwo">YT</a></li>
+                            <li><a href="mailto:contact@millipointtwo.co">@</a></li>
+                        </ul>
+                        <img src="img/logo2.png" class="sm_logo" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- all js here -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/plugins.js"></script>
 </body>
 </html>
