@@ -239,6 +239,15 @@ form button{
 	text-transform: uppercase;
 	font-size: 2rem;
 }
+.blackHeader{
+	background-color: #000000a3;
+}
+.centerDiv{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 @media (max-width: 1199.98px){
 	html{
@@ -282,5 +291,22 @@ form button{
 	}
 	body{
 		font-size: 1.8rem;
+	}
+}
+
+@media (min-width: 768px) {
+	#navbarToggleExternalContent ul {
+		float: left;
+		align-items: normal;
+		margin-top: 10px;
+	}
+}
+
+@media (max-width: 767px) {
+
+	/* Apply these styles on smaller screens (col-12) */
+	#navbarToggleExternalContent ul {
+		text-align: center;
+		margin-top: 20px;
 	}
 }
