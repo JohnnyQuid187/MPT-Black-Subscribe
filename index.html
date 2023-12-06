@@ -24,7 +24,7 @@
 
     <div class="page_wrapper">
         <video src="video/video.mp4" autoplay loop muted playsinline></video>
-        <header>
+        <header style="min-height: 100vh;">
             <div class="container-fluid">
                 <div class="row align-items-center justify-content-between no-gutters">
                     <div class="col-3">
@@ -45,7 +45,7 @@
 
             <div class="collapse" id="navbarToggleExternalContent">
                 
-                <div class="container-fluid"  style="min-height: 75vh;">
+                <div class="container-fluid">
                     <div class="row  justify-content-between no-gutters">
                         <div class="col-md-2  col-12">
     
@@ -72,7 +72,7 @@
 
                             <!-- Default content -->
                             <div id="manifestoContent" style="display: none;">
-                                <h2 style="margin: 80px 0 40px 0;">I AM THE ROMANTIC TAILORING FOR THE WICKED.</h2>
+                                <h1 style="margin: 80px 0 40px 0;">I AM THE ROMANTIC TAILORING FOR THE WICKED.</h1>
                                 <p style="max-width:100%">BORN IN THE PURPLE, STICKY VOID, SCULPTED FROM ONE PART POISON AND ONE PART TENDER KISS, I STEP FORTH BEFORE YOU IN MY SLICKEST LEATHER PANTS, READY TO DANCE. FIND ME IN A DARK CORNER TALKING TO THE NIGHT AND HOWLING AT DANGER’S EYES. BUT DON’T FRET, I’M NOT HERE FOR YOU, NOT YET. WHEN THE DAY CLOSES AND THE DARK CALLS OUT ALL THOSE WHO STAIN THE WORLD AND BRING UNREST, I COME WALKING WITH THEM, BUT BRING SHINY GIFTS INSTEAD OF DECAY. THIS IS FOR THE CURIOUS AND THE WILD, AND THOSE WITH UNDYING COURAGE IN THEIR HEARTS. I AM THE UNIFORM FOR THE JUMPY INNOVATORS WITH THEIR BLOOD BOILING, THEIR HANDS SWEATING ANXIOUSLY, DRESSING UP FOR THE HUNT. THIS IS FOR THE ENTHUSIASTIC AND THE ELECTRIC, THE SELF-GOVERNED SPACE SPRINTERS. OUTLANDISH, COLOR-RIDDEN, DECONSTRUCTED, POST-APOCALYPTIC WHIRLWIND OF GIANT JACKETS, FLOOR-DRAGGING PANTS, AND RAZOR-SHARP COATS. RAGING SILHOUETTES MADE WITH SURGICAL CARE AND DISCIPLINE. I AM RELENTLESS. I AM THE FLIPSIDE OF YOUR DIRTY WALLET. I AM THE DROP OF BLOOD IN YOUR TOILET. I AM THE STAIN THAT NEVER COMES OFF. I AM THE HIGH YOU WON’T STOP CHASING. I AM MILLI POINT TWO.</p>
                             </div>
                             <div id="aboutContent" style="display: none;">
@@ -80,26 +80,26 @@
                                 <h3>Milli represents 1000%</h3>
                                 <h3>“point two” represents going forward.</br> Always farther,</br> Always next level,</br> Always</br> “point two”.</h3>
                                 <h3  style="margin: 20px 0">more than before, more than what is possible.</h3>
-                                <h2 style="margin: 40px 0">THE FOUNDERS</h2>
+                                <h1 style="margin: 40px 0">THE FOUNDERS</h1>
                                 <p style="max-width:100%">The Croatian design duo, Tomislav Trčak & Anthea Bebek, cousins-turned-business-partners, were both born into smalltown working families in suburban Samobor. Growing up in rather traditional households, the pair’s childhood revolved heavily around sports, with Tomo becoming national tennis pro at one point. Still, early on, the two bonded over mutual love for US arthouse films, pop art, and alternative music of the 90s. Their friends would smuggle foreign records and movies, which they spent days watching and listening. That is also where their love of fashion started - in observing the details, their idols’ styles, and the photography. They would constantly find themselves unsatisfied with their own wardrobes. Everything was either too tight or too big, or too “this” and very “that”, but not quite “there”. Years later, the bold duo’s first venture was an entirely digital collection, which later transformed into the Milli Point Two of today. Now, with the help of Anthea’s years of creative and design experience and Tomislav’s business savviness, the brand seeks to satisfy the youth daydreams about making clothes that, in Tomislav’s own words “their younger selves would kill to be able to wear”.</p>
                             </div>
                             <div id="pressContent" style="display: none;">
                                 <div>
-                                    <h2 style="margin: 20px 0">Press</h2>
+                                    <h1 style="margin: 20px 0">Press</h1>
                                     <h2 style="margin: 20px 0">Divna susa</br>hello@divnasusa.com</h2>
                                 </div>
                             </div>
                             <div id="saleContent" style="display: none;">
                                 <div>
-                                    <h2 style="margin: 20px 0">Sales</h2>
+                                    <h1 style="margin: 20px 0">Sales</h1>
                                     <h2 style="margin: 20px 0">Federico Del Pra</br>federico@millipointtwo.co</h2>
                                 </div>
                             </div>
                             <div id="contactContent" style="display: none;">
                                 <div>
-                                    <h2 style="margin: 20px 0">Contact</h2>
+                                    <h1 style="margin: 20px 0">Contact</h1>
                                     <h2 style="margin: 20px 0">contact@millipointtwo.co</h2>
-                                    <h2 style="margin: 20px 0">Zagrebačka ulica 32a,</br>10430 Samobor</h2>
+                                    <h2 style="margin: 20px 0">Zagrebačka ulica 32a,</br>10430 Samobor Croatia</h2>
                                 </div>
                             </div>
 
@@ -111,20 +111,21 @@
                 </div>
                 
             </div>
-
         </header>
-        <form action="https://gmail.us13.list-manage.com/subscribe/post" method="POST" class="text-center">
-            <div class="container">
-
-                <input type="hidden" name="u" value="53caa8c921df3354e288e47bf">
-                <input type="hidden" name="id" value="b43383492c">
-                <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0"
-                    size="25" value="" placeholder="E-MAIL ADDRESS">
-                <div class="btn_wrap">
-                    <button type="submit">SUBSCRIBE</button>
+        <div style="position: fixed; bottom: 0; width:100%;" id="emailForm">
+            <form action="https://gmail.us13.list-manage.com/subscribe/post" method="POST" class="text-center">
+                <div class="container">
+    
+                    <input type="hidden" name="u" value="53caa8c921df3354e288e47bf">
+                    <input type="hidden" name="id" value="b43383492c">
+                    <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0"
+                        size="25" value="" placeholder="E-MAIL ADDRESS">
+                    <div class="btn_wrap">
+                        <button type="submit">SUBSCRIBE</button>
+                    </div>
                 </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
     <!-- modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
@@ -136,7 +137,7 @@
                 <div class="modal-body modal_card" style="text-align: center;">
                     <img src="img/logo.png" class="logo2" alt="">
                     <p>Dear Friend,</p>
-                    <h2>MILLI POINT TWO</h2>
+                    <h1>MILLI POINT TWO</h1>
                     <p>is pleased to welcome you to the opening cocktail party</p>
                     <div class="line"></div>
                     <p><strong>Tuesday June 20th</strong> from 7pm till 10pm</p>
@@ -188,12 +189,14 @@
         $(document).ready(function() {
             $('#navbarToggleExternalContent').on('show.bs.collapse', function () {
                 $('header').addClass('blackHeader');
-                $('#menuButton').removeClass('fa-bars').addClass('fa-x')
+                $('#menuButton').removeClass('fa-bars').addClass('fa-x');
+                $('#emailForm').removeClass('fa-bars').hide();
             });
 
             $('#navbarToggleExternalContent').on('hidden.bs.collapse', function () {
                 $('header').removeClass('blackHeader');
-                $('#menuButton').removeClass('fa-x').addClass('fa-bars')
+                $('#menuButton').removeClass('fa-x').addClass('fa-bars');
+                $('#emailForm').removeClass('fa-bars').show();
             });
         });
 
