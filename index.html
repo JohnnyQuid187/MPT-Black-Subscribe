@@ -185,14 +185,16 @@
             }
         }
 
-        $('#navbarToggleExternalContent').on('show.bs.collapse', function () {
-            $('header').addClass('blackHeader');
-            $('#menuButton').removeClass('fa-bars').addClass('fa-x')
-        });
+        $(document).ready(function() {
+            $('#navbarToggleExternalContent').on('show.bs.collapse', function () {
+                $('header').addClass('blackHeader');
+                $('#menuButton').removeClass('fa-bars').addClass('fa-x')
+            });
 
-        $('#navbarToggleExternalContent').on('hidden.bs.collapse', function () {
-            $('header').removeClass('blackHeader');
-            $('#menuButton').removeClass('fa-x').addClass('fa-bars')
+            $('#navbarToggleExternalContent').on('hidden.bs.collapse', function () {
+                $('header').removeClass('blackHeader');
+                $('#menuButton').removeClass('fa-x').addClass('fa-bars')
+            });
         });
 
     </script>
