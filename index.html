@@ -17,6 +17,8 @@
     <!-- all css here -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
 
@@ -25,8 +27,11 @@
         <header>
             <div class="container-fluid">
                 <div class="row align-items-center justify-content-between no-gutters">
+                    <div class="col-3">
+                        <i class="fas fa-bars menu-icon" style="color:white; cursor: pointer;" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" id="navBtn"></i>
+                    </div>
                     <div class="col-5 text-center">
-                        <img src="img/logo.png" class="logo img-fluid" alt="">
+                        <img src="MILLI-POINT-TWO-Logo.png" class="logo img-fluid" alt="" style="filter: invert(100%);">
                     </div>
                     <div class="col-3">
                         <ul>
@@ -35,8 +40,71 @@
                             <li><a href="mailto:contact@millipointtwo.co">@</a></li>
                         </ul>
                     </div>
+                </div>
             </div>
-        </div>
+
+            <div class="collapse" id="navbarToggleExternalContent">
+                
+                <div class="container-fluid"  style="min-height: 75vh;">
+                    <div class="row  justify-content-between no-gutters">
+                        <div class="col-md-2  col-12">
+    
+                            <ul class="navbar-nav " >
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" onclick="toggleContent('manifesto')">Manifesto</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" onclick="toggleContent('about')">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" onclick="toggleContent('press')">Press</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" onclick="toggleContent('sale')">Sale</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" onclick="toggleContent('contact')">Contact</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="col-md-7  col-12 text-center">
+
+                            <!-- Default content -->
+                            <div id="manifestoContent" style="display: none;">
+                                <h2 style="margin: 80px 0 40px 0;">I AM THE ROMANTIC TAILORING FOR THE WICKED.</h2>
+                                <p style="max-width:100%">BORN IN THE PURPLE, STICKY VOID, SCULPTED FROM ONE PART POISON AND ONE PART TENDER KISS, I STEP FORTH BEFORE YOU IN MY SLICKEST LEATHER PANTS, READY TO DANCE. FIND ME IN A DARK CORNER TALKING TO THE NIGHT AND HOWLING AT DANGER’S EYES. BUT DON’T FRET, I’M NOT HERE FOR YOU, NOT YET. WHEN THE DAY CLOSES AND THE DARK CALLS OUT ALL THOSE WHO STAIN THE WORLD AND BRING UNREST, I COME WALKING WITH THEM, BUT BRING SHINY GIFTS INSTEAD OF DECAY. THIS IS FOR THE CURIOUS AND THE WILD, AND THOSE WITH UNDYING COURAGE IN THEIR HEARTS. I AM THE UNIFORM FOR THE JUMPY INNOVATORS WITH THEIR BLOOD BOILING, THEIR HANDS SWEATING ANXIOUSLY, DRESSING UP FOR THE HUNT. THIS IS FOR THE ENTHUSIASTIC AND THE ELECTRIC, THE SELF-GOVERNED SPACE SPRINTERS. OUTLANDISH, COLOR-RIDDEN, DECONSTRUCTED, POST-APOCALYPTIC WHIRLWIND OF GIANT JACKETS, FLOOR-DRAGGING PANTS, AND RAZOR-SHARP COATS. RAGING SILHOUETTES MADE WITH SURGICAL CARE AND DISCIPLINE. I AM RELENTLESS. I AM THE FLIPSIDE OF YOUR DIRTY WALLET. I AM THE DROP OF BLOOD IN YOUR TOILET. I AM THE STAIN THAT NEVER COMES OFF. I AM THE HIGH YOU WON’T STOP CHASING. I AM MILLI POINT TWO.</p>
+                            </div>
+                            <div id="aboutContent" style="display: none;">
+                                <img src="img/logo.png" class="logo img-fluid" alt="" style="margin: 80px 0 40px 0">
+                                <h3>Milli represents 1000%</h3>
+                                <h3>“point two” represents going forward.</br> Always farther,</br> Always next level,</br> Always</br> “point two”.</h3>
+                                <h3  style="margin: 20px 0">more than before, more than what is possible.</h3>
+                                <h2 style="margin: 40px 0">THE FOUNDERS</h2>
+                                <p style="max-width:100%">The Croatian design duo, Tomislav Trčak & Anthea Bebek, cousins-turned-business-partners, were both born into smalltown working families in suburban Samobor. Growing up in rather traditional households, the pair’s childhood revolved heavily around sports, with Tomo becoming national tennis pro at one point. Still, early on, the two bonded over mutual love for US arthouse films, pop art, and alternative music of the 90s. Their friends would smuggle foreign records and movies, which they spent days watching and listening. That is also where their love of fashion started - in observing the details, their idols’ styles, and the photography. They would constantly find themselves unsatisfied with their own wardrobes. Everything was either too tight or too big, or too “this” and very “that”, but not quite “there”. Years later, the bold duo’s first venture was an entirely digital collection, which later transformed into the Milli Point Two of today. Now, with the help of Anthea’s years of creative and design experience and Tomislav’s business savviness, the brand seeks to satisfy the youth daydreams about making clothes that, in Tomislav’s own words “their younger selves would kill to be able to wear”.</p>
+                            </div>
+                            <div id="pressContent" style="display: none;">
+                                <h2>Info Section</h2>
+                                <p style="max-width:100%">This is the Info Section content.</p>
+                            </div>
+                            <div id="saleContent" style="display: none;">
+                                <h2>Info Section</h2>
+                                <p style="max-width:100%">This is the Info Section content.</p>
+                            </div>
+                            <div id="contactContent" style="display: none;">
+                                <h2>Info Section</h2>
+                                <p style="max-width:100%">This is the Info Section content.</p>
+                            </div>
+
+                        </div>
+                        <div class="col-md-2  col-12">
+
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
         </header>
         <form action="https://gmail.us13.list-manage.com/subscribe/post" method="POST" class="text-center">
             <div class="container">
@@ -58,7 +126,7 @@
                 <button type="button" class="close d-sm-none" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
-                <div class="modal-body modal_card">
+                <div class="modal-body modal_card" style="text-align: center;">
                     <img src="img/logo.png" class="logo2" alt="">
                     <p>Dear Friend,</p>
                     <h2>MILLI POINT TWO</h2>
@@ -88,5 +156,44 @@
     <!-- all js here -->
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/plugins.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+        function toggleContent(contentType) {
+            // Get the right-side content divs
+            var manifestoContentDiv = document.getElementById('manifestoContent');
+            var aboutContentDiv = document.getElementById('aboutContent');
+            var pressContentDiv = document.getElementById('pressContent');
+            var saleContentDiv = document.getElementById('saleContent');
+            var contactContentDiv = document.getElementById('contactContent');
+
+            // Hide all content divs
+            manifestoContentDiv.style.display = 'none';
+            aboutContentDiv.style.display = 'none';
+            pressContentDiv.style.display = 'none';
+            saleContentDiv.style.display = 'none';
+            contactContentDiv.style.display = 'none';
+
+            // Show the selected content div
+            switch (contentType) {
+                case 'manifesto': manifestoContentDiv.style.display = 'block'; break;
+                case 'about': aboutContentDiv.style.display = 'block'; break;
+                case 'press': pressContentDiv.style.display = 'block'; break;
+                case 'sale': saleContentDiv.style.display = 'block'; break;
+                case 'contact': contactContentDiv.style.display = 'block'; break;
+                default:break;
+            }
+        }
+
+        $('#navbarToggleExternalContent').on('show.bs.collapse', function () {
+            $('header').addClass('blackHeader');
+        });
+
+        $('#navbarToggleExternalContent').on('hidden.bs.collapse', function () {
+            $('header').removeClass('blackHeader');
+        });
+
+    </script>
+
 </body>
 </html>
